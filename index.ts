@@ -1,4 +1,4 @@
-import express from 'express'
+import express, { Request, Response, NextFunction } from 'express'
 import { userRouter } from './users/users.js'
 
 
@@ -10,6 +10,10 @@ app.get('/hello', (req, res) => {
 })
 
 app.use('/users', userRouter)
+
+app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+    console.log(err.message);
+})
 
 app.listen(port, () => {
     console.log('listen');
