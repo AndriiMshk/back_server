@@ -1,4 +1,4 @@
-import { Router, Response, json } from "express"
+import { Router, Response } from "express"
 import { LoggerService } from "../logger/logger.service"
 import { IControlerRoute } from './ruote.interface'
 
