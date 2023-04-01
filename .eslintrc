@@ -24,7 +24,7 @@
 			{
 				"singleQuote": true,
 				"useTabs": true,
-				"semi": false,
+				"semi": true,
 				"trailingComma": "all",
 				"bracketSpacing": true,
 				"printWidth": 100,

@@ -1,17 +1,18 @@
 {
-	"name": "server-api",
+	"name": "dashboard-api",
 	"version": "1.0.0",
-	"description": "API",
+	"description": "API для учебного проекта 4-NodeJS",
 	"main": "index.js",
 	"type": "commonjs",
 	"scripts": {
 		"start": "node ./dist/main.js",
+		"dev": "nodemon",
 		"lint": "eslint ./src/**",
 		"lint:fix": "eslint ./src/** --fix",
 		"build": "tsc",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "Andrii",
+	"author": "Anton Larichev",
 	"license": "ISC",
 	"dependencies": {
 		"express": "^4.17.1",
@@ -26,7 +27,9 @@
 		"eslint": "^8.0.1",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^4.0.0",
+		"nodemon": "^2.0.13",
 		"prettier": "^2.4.1",
+		"ts-node": "^10.3.0",
 		"typescript": "^4.4.4"
 	}
 }
