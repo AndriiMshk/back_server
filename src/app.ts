@@ -8,9 +8,6 @@ import { UserController } from './users/users.controller'
 import 'reflect-metadata'
 
 
-
-
-
 @injectable()
 export class App {
 	app: Express
